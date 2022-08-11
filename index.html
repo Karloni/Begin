@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="funny, jokes, memes">
+    <meta name="keywords" content="resume, cv">
     <meta name="description" content="Тут что-то интересное">
+    <link rel="stylesheet" href="styles.css">
     <title>Это моя страница!</title>
 </head>
 <body>
-  <img src="Кеворков.jpg" width="200" alt="Сергей Кеворков">
-  <h1><strong>Сергей Кеворков</strong></h1>
-    <p>Меня зовут <strong>Сергей Кеворков</strong>, я работаю в компании <em><strong>Ростелеком</strong></em></p>
-    <p>Хочу стать <em>программистом</em>, потому что это будет мой способ <em>помогать людям</em></p>
-    <br>
-    <a href="https://vk.com/karli4" target="_blank">Вконтакте</a>
-    <h3>Мои увлечения</h3>
+    <div class="text">
+        <img src="Кеворков.jpg" width="200" alt="Сергей Кеворков">
+        
+        <div class="info">
+            <h1><strong>Сергей Кеворков</strong></h1>
+            <p>Меня зовут Сергей Кеворков, я работаю в компании Ростелеком</p>
+            <p>Хочу стать разработчиком, потому что это будет мой способ помогать людям</p>
+            <hr> 
+            <h2>Мои контакты</h2>
+            <a href="https://vk.com/karli4" target="_blank">Вконтакте</a> |
+            <a href="https://instagram.com/karl_2k" target="_blank">Instagram</a>
+            <br>Телефон: <strong>+7-922-776-81-49</strong>
+            <br>Email: <strong>kevorkov.sergey@gmail.com</strong>
+        </div>
+    </div> 
+    <div class="color">
+        <h3>Мои увлечения</h3>
+    </div>
     <ol>
         <li>Книги</li>
         <li>Кинематограф</li>
+        <li>Футбол</li>
         <li>Прогулки</li>
     </ol>
     <hr>
-    <h3>Опыт работы</h3>
-    <table width="400">
+    <div class="color">
+        <h3>Опыт работы</h3>
+    </div>
+    <table width="400" class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -55,7 +70,9 @@
         </tbody>
     </table>
     <hr>
-    <h3>Связаться со мной</h3>
+    <div class="color">
+        <h3>Связаться со мной</h3>
+    </div>
     <form action="/">
         <div>
             <label for="name">Ваше имя</label>
@@ -68,7 +85,7 @@
         <div>
             <label for="message">Ваше сообщение</label>
             <br>
-            <textarea id="message" cols="30" rows="7" placeholder="Введите сообщение..."></textarea>
+            <textarea id="message" cols="31" rows="7" placeholder="Введите сообщение..."></textarea>
         </div>
         <button type="submit">Отправить!</button>
     </form>
